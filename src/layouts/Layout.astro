@@ -1,0 +1,243 @@
+---
+interface Props {
+	title: string;
+}
+import { Icon } from "astro-icon/components";
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<!-- <body class="bg-slate-300">
+		<div class="h-16 bg-slate-100 flex items-center">
+			<header class="flex justify-between container max-w-6xl mx-auto ">
+				<div>
+		
+	
+					<menu>
+						<ul class="space-x-4 ">
+							
+							
+							<li class="bg-red-700 text-white font-extrabold inline-block"><a href="">moll0</a></li>
+							<li class="inline-block"><a href="">home</a></li>
+							<li class="inline-block"><a href="">home</a></li>
+							<li class="inline-block"><a href="">home</a></li>
+							<li class="inline-block"><a href="">home</a></li>
+							<li class="inline-block"><a href="">home</a></li>
+						</ul>
+	
+	
+					</menu>
+				</div>
+
+				<div>
+					botones
+
+				</div>
+			</header>
+		</div>
+		
+		
+
+	</body> -->
+
+
+
+
+
+	<body class="bg-slate-200">
+		<div class="bg-white h-16 flex items-center">
+			<header class="flex justify-between container max-w-6xl mx-auto">
+				<h1>
+					<span class="font-extrabold bg-red-600 text-orange-50"
+						>mell0</span>
+				</h1>
+				<menu>
+					
+					<ul class="space-x-4">
+						
+						
+						<li class="inline-block"><a href="#">home</a></li>
+						<li class="inline-block"><a href="#">collection</a></li>
+						<li class="inline-block"><a href="#">categories</a></li>
+						<li class="inline-block"><a href="#">shop</a></li>
+						<li class="inline-block"><a href="#">blog</a></li>
+						<li class="inline-block"><a href="#">pages</a></li>
+					</ul>
+				</menu>
+				<div class="">
+					
+					<Icon name="mdi:search" class="inline-block"/>
+					<Icon name="mdi:find-love" class="inline-block"/>
+					<Icon name="mdi:bell" class="inline-block"/>
+					<Icon name="mdi:account-box-minus-outline" class="inline-block"/>
+				</div>
+			</header>
+		</div>
+		<div class="bg-white p-6 mt-6 container max-6xl: mx-auto">
+			<div class="grid grid-cols-2">
+				<div class="ml-56">
+					<h1>new arrival 2019</h1>
+					<p class="mt-20">
+						<span class="font-extrabold"
+							>We design thoughtful,<br /> livable spaces</span
+						>
+					</p>
+					<p class="mt-8">
+						<span class="border-b-2 border-red-700"
+							>VIEW COLLECTION</span>
+					</p>
+				</div>
+				<div
+					class="bg-orange-400 h-64 w-64 bg-[url(https://onlinedeco.com.ar/wp-content/uploads/2018/01/Amarillita-web.jpg)] bg-cover"
+				>
+				</div>
+			</div>
+		</div>
+
+		<div class="mt-12 flex justify-evenly container max-w-6xl mx-auto ">
+			<div class="flex justify-evenly gap-4 ">
+				<div class="border-4 border-orange-500 h-40 w-40 bg-red-600 bg-[url(https://www.elpalaciodehierro.com/on/demandware.static/-/Sites-palacio-master-catalog/default/dw3e780359/images/40830660/large/40830660_x1.jpg)] bg-cover"> <span>bags</span></div>
+				<div class="border-4 border-orange-500 h-40 w-40  bg-red-600 bg-[url(https://tse1.mm.bing.net/th?id=OIP.1qa4V--ofj-cVyj0HWfyVQHaHa&pid=Api&P=0&h=180)] bg-cover"><span>watches</span> </div>
+				<div class="border-4 border-orange-500 h-40 w-80  bg-red-600 bg-[url(https://m.media-amazon.com/images/I/61kzzYiHxrL._AC_UY625_.jpg)] bg-cover">
+					<span class="text-center mt-32">Sport Shoes</span> </div>
+			</div>
+
+			
+		</div>
+		<div class="mt-12 flex justify-evenly container max-w-6xl mx-auto">
+			<div class="flex justify-evenly gap-4 ">
+				<div class="h-40 w-80  bg-red-600"></div>
+				<div class="h-40 w-40  bg-red-600"></div>
+				<div class="h-40 w-40  bg-red-600"></div>
+
+			</div>
+			
+
+		</div>
+		<div class="bg-white h-16 flex items-center">
+
+			<header class="flex justify-between container max-w-6xl mx-auto">
+				<h1>Trending Products</h1>
+				<menu >
+					<ul class="space-x-4">
+						<li class="inline-block">Top rate</li>
+						<li class="inline-block">New arrival</li>
+						<li class="inline-block">Best Seller</li>
+						<li class="inline-block">Featured</li>
+					</ul>
+	
+				</menu>
+			</header>
+		</div>
+
+		<div class="mt-12 container max-w-6xl mx-auto grid grid-cols-4 gap-1 ">
+			
+				
+				<div class="bg-white h-40 w-40 ">
+					<div class="h-40 w-40 bg-slate-400 mx-auto"></div>
+
+					<p class="text-center">Out of stock <br>89.00</p>			
+				</div>
+				<div class="bg-white h-40 w-40 ">
+					<div class="h-40 w-40 bg-slate-400 mx-auto"></div>
+
+					<p class="text-center">Trip Stone Black<br>80.00</p>	
+				</div>
+				<div class="bg-white h-40 w-40 ">
+					<div class="h-40 w-40 bg-slate-400 mx-auto"></div>
+					
+					<p class="text-center">Green Appetizer tray<br>80.00</p>	
+				</div>
+				<div class="bg-white h-40 w-40 ">
+					<div class="h-40 w-40 bg-slate-400 mx-auto"></div>
+
+					<p class="text-center">Deal Producto <br>100.00</p>	
+				</div>
+
+			
+			</div>
+		<div class="mt-12 container max-w-6xl mx-auto grid grid-cols-4 gap-1 ">
+			
+				
+				<div class="bg-white h-40 w-40 ">
+					<div class="h-40 w-40 bg-slate-400 mx-auto"></div>
+
+					<p class="text-center">Out of stock <br>89.00</p>			
+				</div>
+				<div class="bg-white h-40 w-40 ">
+					<div class="h-40 w-40 bg-slate-400 mx-auto"></div>
+
+					<p class="text-center">Trip Stone Black<br>80.00</p>	
+				</div>
+				<div class="bg-white h-40 w-40 ">
+					<div class="h-40 w-40 bg-slate-400 mx-auto"></div>
+					
+					<p class="text-center">Green Appetizer tray<br>80.00</p>	
+				</div>
+				<div class="bg-white h-40 w-40 ">
+					<div class="h-40 w-40 bg-slate-400 mx-auto"></div>
+
+					<p class="text-center">Deal Producto <br>100.00</p>	
+				</div>
+
+			
+			</div>
+
+			<div class="mt-12 container max-w-6xl mx-auto grid grid-cols-4 ">
+				<div class="w-60 h-40 bg-white flex justify-between">
+					<Icon name="mdi:cart" class="ml-6 mt-16 size-8"/>
+					<p class="ml-6 mt-16 mx-auto">Free Shipping</p>
+
+
+				</div>
+				<div class="w-60 h-40 bg-white flex justify-between">
+					<Icon name="mdi:tshirt-v-outline" class="ml-6 mt-16 size-8"/>
+					<p class="ml-6 mt-16 mx-auto">90 Days Return</p>
+
+				</div>
+				<div class="w-60 h-40 bg-white flex justify-between">
+					<Icon name="mdi:application" class="ml-6 mt-16 size-8"/>
+					<p class="ml-6 mt-16 mx-auto">secure paymaents</p>
+
+				</div>
+				<div class="w-60 h-40 bg-white flex justify-between">
+					<Icon name="mdi:account-plus-outline" class="ml-6 mt-16 size-8"/>
+					<p class="ml-6 mt-16 mx-auto">24/7 Support</p>
+
+				</div>
+
+			</div>
+			<div class="">
+				<footer class="bg-white py-12 mx-auto flex justify-between">
+					<div class="ml-6">
+					<h1>mello</h1>
+					<p>asasfafasfasfasfasf</p>
+					</div>
+					<div>
+						<ul class="mr-6 mt-12">
+							<li class="inline-block">aasd</li>
+							<li class="inline-block">asdasd</li>
+							<li class="inline-block">asdasd</li>
+							<li class="inline-block">asdasd</li>
+						</ul>
+
+	
+					</div>
+	
+				</footer>
+			</div>
+
+				
+
+	</body>
+</html>
